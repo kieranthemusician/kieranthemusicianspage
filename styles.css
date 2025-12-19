@@ -1,0 +1,80 @@
+/* Site theme colors */
+:root {
+  --purple: #3A1A3B;
+  --purple-dark: #2E1430;
+  --gold: #FFC939;
+  --gold-soft: #FFE08A;
+  --gold-hover: #FFF1B8;
+}
+
+/* Global page styling */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--purple);
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  padding: 28px 18px;
+}
+
+/* Make text readable on wide screens */
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: var(--purple-dark);
+  padding: 22px 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--gold);
+  margin-top: 0;
+  letter-spacing: 0.2px;
+}
+
+/* Paragraph spacing */
+p {
+  margin: 12px 0;
+}
+
+/* Links */
+a {
+  color: var(--gold-soft);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--gold-hover);
+}
+
+/* Verse images */
+.verse-stack img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin: 34px auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Mobile spacing tweaks */
+@media (max-width: 600px) {
+  body {
+    padding: 18px 12px;
+  }
+  .content {
+    padding: 16px 14px;
+    border-radius: 12px;
+  }
+  .verse-stack img {
+    margin: 22px auto;
+  }
+}
