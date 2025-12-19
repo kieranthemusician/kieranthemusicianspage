@@ -1,49 +1,53 @@
-/* Site theme colors */
+/* ===== COLOR THEME ===== */
 :root {
   --purple: #3A1A3B;
-  --purple-dark: #2E1430;
+  --purple-dark: #2B112C;
   --gold: #FFC939;
   --gold-soft: #FFE08A;
   --gold-hover: #FFF1B8;
 }
 
-/* Global page styling */
+/* ===== GLOBAL RESET ===== */
 html, body {
   margin: 0;
   padding: 0;
 }
 
+/* ===== PAGE BACKGROUND ===== */
 body {
   background-color: var(--purple);
   color: var(--gold);
   font-family: Georgia, "Times New Roman", serif;
-  line-height: 1.6;
-  padding: 28px 18px;
+  line-height: 1.65;
 }
 
-/* Make text readable on wide screens */
-.content {
+/* ===== MASTER WIDTH COLUMN ===== */
+.page-column {
   max-width: 1100px;
-  margin: 0 auto;
-  background: var(--purple-dark);
-  padding: 22px 22px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 20px;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--gold);
+/* ===== HEADINGS ===== */
+h1 {
   margin-top: 0;
-  letter-spacing: 0.2px;
+  color: var(--gold);
 }
 
-/* Paragraph spacing */
+/* ===== PARAGRAPHS ===== */
 p {
-  margin: 12px 0;
+  margin: 14px 0;
 }
 
-/* Links */
+/* ===== COMMENTARY TEXT ===== */
+.commentary {
+  margin: 14px 0 48px 0;
+  color: var(--gold);
+  font-size: 1.05rem;
+}
+
+/* ===== LINKS ===== */
 a {
   color: var(--gold-soft);
   text-decoration: underline;
@@ -54,27 +58,28 @@ a:hover {
   color: var(--gold-hover);
 }
 
-/* Verse images */
+/* ===== SCRIPTURE IMAGE STACK ===== */
+.verse-stack {
+  margin: 36px 0 10px 0;
+}
+
 .verse-stack img {
   width: 100%;
   max-width: 1100px;
-  height: auto;
   display: block;
-  margin: 34px auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
 }
 
-/* Mobile spacing tweaks */
+/* ===== MOBILE ADJUSTMENTS ===== */
 @media (max-width: 600px) {
-  body {
-    padding: 18px 12px;
+  .page-column {
+    padding: 24px 14px;
   }
-  .content {
-    padding: 16px 14px;
-    border-radius: 12px;
-  }
-  .verse-stack img {
-    margin: 22px auto;
+
+  .commentary {
+    font-size: 1rem;
   }
 }
