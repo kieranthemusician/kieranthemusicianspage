@@ -8,6 +8,10 @@
 }
 
 /* ===== GLOBAL RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -20,7 +24,7 @@ body {
   line-height: 1.65;
 }
 
-/* ===== LAYOUT (SIDEBAR + MAIN) ===== */
+/* ===== LAYOUT ===== */
 .layout {
   display: flex;
   min-height: 100vh;
@@ -36,7 +40,6 @@ body {
   padding: 22px 16px;
   background: var(--purple-dark);
   border-right: 1px solid rgba(255, 201, 57, 0.35);
-  box-sizing: border-box;
 }
 
 .brand {
@@ -84,21 +87,18 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 40px 20px;
-  box-sizing: border-box;
 }
 
-/* ===== HEADINGS ===== */
+/* ===== TYPOGRAPHY ===== */
 h1 {
-  margin-top: 0;
+  margin: 0 0 16px 0;
   color: var(--gold);
 }
 
-/* ===== PARAGRAPHS ===== */
 p {
   margin: 14px 0;
 }
 
-/* ===== COMMENTARY TEXT ===== */
 .commentary {
   margin: 14px 0 48px 0;
   color: var(--gold);
@@ -116,9 +116,9 @@ a:hover {
   color: var(--gold-hover);
 }
 
-/* ===== VERSE IMAGE STACK ===== */
+/* ===== IMAGE BLOCKS ===== */
 .verse-stack {
-  margin: 36px 0 10px 0;
+  margin: 26px 0 10px 0;
 }
 
 .verse-stack img {
@@ -131,7 +131,7 @@ a:hover {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
 }
 
-/* ===== MOBILE: SIDEBAR BECOMES TOP NAV ===== */
+/* ===== MOBILE: SIDEBAR -> TOP NAV ===== */
 @media (max-width: 900px) {
   .layout {
     flex-direction: column;
