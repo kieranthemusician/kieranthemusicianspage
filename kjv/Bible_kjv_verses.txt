@@ -1,7 +1,3 @@
-Source: https://bible.knowing-jesus.com
-Version code: kjv
-Format: Classic (with verses)
-
 Genesis
 =======
 
