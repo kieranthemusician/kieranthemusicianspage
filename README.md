@@ -1,0 +1,1 @@
+The 1537 Bible is the first English translation of the Word of God. Many things have been removed from modern bibles or changed. For example, 2 Samuel 11:11 in this version contains the phrase "flat earth." This is not found in any modern bible. "Lucifer" is changed in Isaiah 51:9 to Egypt or Rahab in modern bibles, also. 
